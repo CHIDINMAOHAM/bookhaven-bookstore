@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Book Haven Bookstore</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&family=Calibri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="images/red logo.png" type="image/x-icon">
+</head>
+    
+<body>
+    <header role="banner">
+        <a href="index.html" aria-label="Home">
+            <img src="images/red logo.png" alt="Book Haven store logo" width="50px">
+        </a>
+        <h1 class="title-large" role="heading" aria-level="1" style="text-align: center;">BOOK HAVEN BOOKSTORE</h1>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav id="header-nav" role="navigation" aria-label="Main navigation">
+            <button class="cancel-btn" aria-label="Close menu">&times;</button>
+            <ul>
+                <li><a href="index.html" class="caption" role="link">Home</a></li>
+                <li><a href="gallery.html" class="caption" role="link">Gallery</a></li>
+                <li><a href="about.html" class="caption" role="link">About</a></li>
+                <li><a href="community.html" class="caption" role="link">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+    <main role="main">
+        
+        <section class="client-highlights" aria-labelledby="client-highlights">
+            <div class="carousel">
+                <h2 id="client-highlights" style="color: #2E4057;" role="heading" aria-level="2">Your Next Great Read is here! Our collection ranges from timeless classics to modern bestsellers, bringing stories to life for book lovers of all kinds. We also have amazing tote bags and stickers.</h2>
+            </div>
+        </section>
+
+        <section class="shopping-promos" aria-labelledby="promo-heading">
+            <div class="promo-banner">
+                <div class="promo-txt-div">
+                    <p class="title-large" id="promo-heading" role="heading" aria-level="2">Get 20% off your first purchase!</p>
+                </div>
+                <div class="promo-btn-div">
+                    <p class="title-large">Buy One Get One Free!</p>
+                </div>   
+            </div>
+        </section>
+
+        <section class="product-images" aria-labelledby="featured-products">
+            <h2 class="title" style="text-align: center;" id="featured-products" role="heading" aria-level="2">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/Client3_Magazine1.png" alt="Pickle Ball Magazine" role="img">
+                    <p class="body">Ball, a magazine about pickleball</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/Client3_Magazine2.png" alt="Travel Magazine" role="img">
+                    <p class="body">Travel, a magazine for travelers</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/Client3_Magazine3.png" alt="Food Magazine" role="img">
+                    <p class="body">Eat., a magazine for foodies</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="shopping-perks" aria-labelledby="shopping-perks-heading">
+            <h2 id="shopping-perks-heading" class="title" role="heading" aria-level="2">Why Shop Here...</h2>
+            <div class="perks-container">
+                <div class="perk-card" role="article">
+                    <i class="fas fa-truck" aria-hidden="true"></i>
+                    <p class="body-strong">Free shipping on orders over $50</p>
+                </div>
+                <div class="perk-card" role="article">
+                    <i class="fas fa-percent" aria-hidden="true"></i>
+                    <p class="body-strong">Exclusive member discounts</p>
+                </div>
+                <div class="perk-card" role="article">
+                    <i class="fas fa-headset" aria-hidden="true"></i>
+                    <p class="body-strong">Friendly customer support</p>
+                </div>
+                <div class="perk-card" role="article">
+                    <i class="fas fa-undo" aria-hidden="true"></i>
+                    <p class="body-strong">Easy returns within 30 days</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-categories" aria-labelledby="categories-heading">
+            <h2 id="categories-heading" role="heading" aria-level="2">Explore Categories</h2>
+            <div class="categories-grid">
+                <div class="category-item body-large" role="article">Books</div>
+                <div class="category-item body-large" role="article">Magazines</div>
+                <div class="category-item body-large" role="article">Notebooks</div>
+                <div class="category-item body-large" role="article">Stickers</div>
+                <div class="category-item body-large" role="article">Tote Bags</div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="subscribe" role="form" aria-labelledby="subscribe-heading">
+                <h3 class="title" id="subscribe-heading" role="heading" aria-level="3">Subscribe for our Newsletter</h3>
+                
+            </div>
+            <form id="subscribe-form" aria-labelledby="subscribe-heading">
+                <label for="email" class="body-large">Enter your email:</label>
+                <input type="email" id="email" placeholder="Enter your email" class="body" required aria-required="true">
+                <button type="submit" class="body-strong" aria-label="Subscribe">Subscribe</button>
+            </form>
+            <div class="social-links" aria-labelledby="social-links-heading">
+                <h4 id="social-links-heading" class="sr-only">Follow us on social media</h4>
+                <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <nav class="footer-nav" role="navigation" aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html" class="caption" role="link">Home</a></li>
+                <li><a href="gallery.html" class="caption" role="link">Gallery</a></li>
+                <li><a href="about.html" class="caption" role="link">About</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

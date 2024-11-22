@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Book Haven Bookstore</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&family=Calibri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/red logo.png" type="image/x-icon">
+</head>
+<body>
+    <header role="banner">
+        <a href="index.html" aria-label="Home">
+            <img src="images/red logo.png" alt="Book Haven store logo" width="50px">
+        </a>
+        <h1 class="title-large" role="heading" aria-level="1" style="text-align: center;">BOOK HAVEN BOOKSTORE</h1>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav id="header-nav" role="navigation" aria-label="Main navigation">
+            <button class="cancel-btn" aria-label="Close menu">&times;</button>
+            <ul>
+                <li><a href="index.html" class="caption" role="link">Home</a></li>
+                <li><a href="gallery.html" class="caption" role="link">Gallery</a></li>
+                <li><a href="about.html" class="caption" role="link">About</a></li>
+                <li><a href="community.html" class="caption" role="link">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <main>
+        <section class="about-us" aria-labelledby="about-us-title">
+            <h2 id="about-us-title" class="title">About Us</h2>
+            <p class="body">
+                Book Haven Bookstore is a local treasure for book enthusiasts, offering a diverse 
+                selection of books, magazines, journals, and office supplies. With a deep-rooted commitment to
+                fostering literary exploration and a love for reading, it is embarking on the creation 
+                of an online presence that mirrors its dedication to the world of words. Serving a broad 
+                audience of book lovers and knowledge seekers, its central goal is to amplify its
+                visibility, cultivate a vibrant literary community, and simplify the process of book 
+                inquiries and purchases. Its target audience comprises avid readers, students, and 
+                individuals in search of high-quality reading materials and office essentials. Book Haven
+                Bookstore’s website theme revolves around celebrating the written word, creating an 
+                inviting digital space that encourages literary discovery, and supporting intellectual
+                growth.
+            </p>
+            <h2 class="title" id="business-hours-title">Business Hours</h2>
+            <table class="hours-table" style="border-collapse: collapse; width: 100%; border: 1px solid black;" aria-labelledby="business-hours-title">
+                <thead>
+                    <tr>
+                        <th class="body-strong" style="border: 1px solid black; padding: 8px; text-align: center;">Day</th>
+                        <th class="body-strong" style="border: 1px solid black; padding: 8px; text-align: center;">Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="body" style="border: 1px solid black; padding: 8px;">Monday–Friday</td>
+                        <td class="body" style="border: 1px solid black; padding: 8px;">9 a.m. to 8 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td class="body" style="border: 1px solid black; padding: 8px;">Saturday</td>
+                        <td class="body" style="border: 1px solid black; padding: 8px;">10 a.m. to 6 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td class="body" style="border: 1px solid black; padding: 8px;">Sunday</td>
+                        <td class="body" style="border: 1px solid black; padding: 8px;">11 a.m. to 5 p.m.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Feedback and Custom Orders Section -->
+        <section class="feedback-form" aria-labelledby="feedback-form-title">
+            <h2 id="feedback-form-title" class="title">Feedback & Custom Orders</h2>
+            <p class="body">We would love to hear from you! Please share your thoughts, feedback, or request a custom order. We'll get back to you as soon as possible.</p>
+            <br>
+            <form id="custom-order-form" aria-labelledby="feedback-form-title">
+                <label for="name" class="body-strong">Your Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" class="body" aria-required="true">
+        
+                <label for="email" class="body-strong">Your Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" class="body" aria-required="true">
+        
+                <label for="feedback" class="body-strong">Your Feedback or Custom Order Details:</label>
+                <textarea id="feedback" rows="5" placeholder="Write your feedback or custom order details here" class="body" aria-required="true"></textarea>
+        
+                <!-- New checkbox for custom orders -->
+                <div style="display: flex;">
+                    <input type="checkbox" id="custom-order" class="body" style="width: 5%; padding: 8px" aria-labelledby="custom-order-label">
+                    <label for="custom-order" id="custom-order-label" class="body-strong">Request Custom Order</label>
+                </div>
+        
+                <!-- Submit and clear buttons -->
+                <button type="submit" class="body-strong" style="margin: 10px;">Submit</button>
+                <button type="reset" class="body-strong" style="margin: 10px;;">Clear Form</button>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="subscribe">
+                <h3 class="title">Subscribe for<br> our Newsletter</h3>
+                <form id="subscribe-form">
+                    <label for="email" class="body-large">Enter your email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" class="body" required aria-label="Subscribe to newsletter">
+                    <button type="submit" class="body-strong">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="social-links" aria-label="Follow us on social media">
+                <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <nav class="footer-nav" role="navigation">
+            <ul>
+                <li><a href="index.html" class="caption">Home</a></li>
+                <li><a href="gallery.html" class="caption">Gallery</a></li>
+                <li><a href="about.html" class="caption">About</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

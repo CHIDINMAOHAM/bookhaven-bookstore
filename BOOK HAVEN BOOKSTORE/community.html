@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Community | Book Haven Bookstore</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&family=Calibri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="images/red logo.png" type="image/x-icon">
+</head>
+    
+<body>
+    <header role="banner">
+        <a href="index.html" aria-label="Home">
+            <img src="images/red logo.png" alt="Book Haven store logo" width="50px">
+        </a>
+        <h1 class="title-large" role="heading" aria-level="1" style="text-align: center;">BOOK HAVEN BOOKSTORE</h1>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav id="header-nav" role="navigation" aria-label="Main navigation">
+            <button class="cancel-btn" aria-label="Close menu">&times;</button>
+            <ul>
+                <li><a href="index.html" class="caption" role="link">Home</a></li>
+                <li><a href="gallery.html" class="caption" role="link">Gallery</a></li>
+                <li><a href="about.html" class="caption" role="link">About</a></li>
+                <li><a href="community.html" class="caption" role="link">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="community-corner">
+            <!-- Customer Spotlight Section -->
+            <section id="customer-spotlight" class="section" aria-labelledby="customer-spotlight-title">
+                <h2 id="customer-spotlight-title">Customer Spotlight</h2>
+                <div id="spotlight-boxes">
+                    <article class="bordered-box">
+                        <h3>John Doe</h3>
+                        <p>"Book Haven Bookstore has the best selection of mystery novels! I visit every week to find my next great read."</p>
+                    </article>
+                    <article class="bordered-box">
+                        <h3>Jane Smith</h3>
+                        <p>"I love the cozy atmosphere and friendly staff at Book Haven. It’s the perfect place to relax and browse."</p>
+                    </article>
+                    <article class="bordered-box">
+                        <h3>Dan House</h3>
+                        <p>"Book Haven is my go-to spot for discovering new books! The wide variety of genres and the knowledgeable staff always make my visits enjoyable."</p>  
+                    </article>
+                </div>
+            </section>
+
+            <!-- Community Involvement Section -->
+            <section id="community-involvement" class="section" aria-labelledby="community-involvement-title">
+                <h2 id="community-involvement-title">Community Involvement</h2>
+                <div id="involvement-boxes">
+                    <article class="bordered-box">
+                        <h3>Literacy Program</h3>
+                        <p>We partner with local schools to provide books and support literacy programs to young readers in our community.</p>
+                    </article>
+                    <article class="bordered-box">
+                        <h3>Book Donation Drive</h3>
+                        <p>Join us every fall for our annual book donation drive, where we collect gently used books to donate to libraries and schools in need.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Local Events and Opportunities Section -->
+            <section id="local-events" class="section" aria-labelledby="local-events-title">
+                <h2 id="local-events-title">Local Events & Opportunities</h2>
+                <article class="bordered-box">
+                    <h3>Monthly Book Club</h3>
+                    <p>Join our monthly book club meeting where we discuss a selected book each month. Everyone is welcome!</p>
+                </article>
+                <article class="bordered-box">
+                    <h3>Author Meet-and-Greet</h3>
+                    <p>Meet your favorite local authors at our upcoming author meet-and-greet event. Get your books signed and engage in a Q&A session.</p>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <section class="subscribe" aria-labelledby="subscribe-title">
+                <h3 id="subscribe-title" class="title">Subscribe for<br> our Newsletter</h3>
+                <form id="subscribe-form" aria-labelledby="subscribe-title">
+                    <label for="email" class="body-large">Enter your email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" class="body" required>
+                    <button type="submit" class="body-strong">Subscribe</button>
+                </form>
+            </section>
+
+            <section class="social-links" aria-labelledby="social-links-title">
+                <h3 id="social-links-title" class="sr-only">Follow us on social media</h3>
+                <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </section>
+        </div>
+
+        <nav class="footer-nav" role="navigation" aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html" class="caption" aria-label="Home">Home</a></li>
+                <li><a href="gallery.html" class="caption" aria-label="Gallery">Gallery</a></li>
+                <li><a href="about.html" class="caption" aria-label="About">About</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

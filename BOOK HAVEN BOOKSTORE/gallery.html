@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Book Haven Bookstore</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&family=Calibri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="images/red logo.png" type="image/x-icon">
+</head>
+<body>
+    <header role="banner">
+        <a href="index.html" aria-label="Home">
+            <img src="images/red logo.png" alt="Book Haven store logo" width="50px">
+        </a>
+        <h1 class="title-large" role="heading" aria-level="1" style="text-align: center;">BOOK HAVEN BOOKSTORE</h1>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav id="header-nav" role="navigation" aria-label="Main navigation">
+            <button class="cancel-btn" aria-label="Close menu">&times;</button>
+            <ul>
+                <li><a href="index.html" class="caption" role="link">Home</a></li>
+                <li><a href="gallery.html" class="caption" role="link">Gallery</a></li>
+                <li><a href="about.html" class="caption" role="link">About</a></li>
+                <li><a href="community.html" class="caption" role="link">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <button id="view-cart-btn" onclick="openCartModal()" class="body-strong">View Cart</button>
+        <div class="product-grid">
+            <!-- Product Items -->
+            <div class="product-item">
+                <img src="images/Client3_Book1.png" alt="Book 1" class="product-image">
+                <h3 class="product-title">Brie Mine 4Ever</h3>
+                <p class="product-description">A book for cheese lovers</p>
+                <button class="add-to-cart-btn body-strong" onclick="addToCart('images/Client3_Book1.png', 'Brie Mine 4Ever')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Client3_Book2.png" alt="Book 2" class="product-image">
+                <h3 class="product-title">Glory Riders</h3>
+                <p class="product-description">A book about bikers</p>
+                <button class="add-to-cart-btn body-strong" onclick="addToCart('images/Client3_Book2.png', 'Glory Riders')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Client3_Book3.png" alt="Book 3" class="product-image">
+                <h3 class="product-title">Sorcerer’s Shadowed Chronicles</h3>
+                <p class="product-description">A fantasy book</p>
+                <button class="add-to-cart-btn body-strong" onclick="addToCart('images/Client3_Book3.png', 'Sorcerer’s Shadowed Chronicles')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Client3_Magazine1.png" alt="Magazine 1" class="product-image">
+                <h3 class="product-title">Ball</h3>
+                <p class="product-description">A magazine about pickleball</p>
+                <button class="add-to-cart-btn body-strong" onclick="addToCart('images/Client3_Magazine1.png', 'Ball')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Client3_Magazine2.png" alt="Magazine 2" class="product-image">
+                <h3 class="product-title">Travel</h3>
+                <p class="product-description">A magazine for travelers</p>
+                <button class="add-to-cart-btn body-strong" onclick="addToCart('images/Client3_Magazine2.png', 'Travel')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Client3_Magazine3.png" alt="Magazine 3" class="product-image">
+                <h3 class="product-title">Eat.</h3>
+                <p class="product-description">A magazine for foodies</p>
+                <button class="add-to-cart-btn body-strong" onclick="addToCart('images/Client3_Magazine3.png', 'Eat.')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Client3_Notebook.png" alt="Notebook" class="product-image">
+                <h3 class="product-title">Book Haven Notebook</h3>
+                <p class="product-description">A notebook with text on the cover that says Book Haven Bookstore</p>
+                <button class="add-to-cart-btn body-strong" onclick="addToCart('images/Client3_Notebook.png', 'Book Haven Notebook')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Client3_Stickers.png" alt="Stickers" class="product-image">
+                <h3 class="product-title">Book Haven Stickers</h3>
+                <p class="product-description">A set of four Book Haven Bookstore stickers that promote reading</p>
+                <button class="add-to-cart-btn body-strong" onclick="addToCart('images/Client3_Stickers.png', 'Book Haven Stickers')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Client3_ToteBag.png" alt="Tote Bag" class="product-image">
+                <h3 class="product-title">Book Haven Tote Bag</h3>
+                <p class="product-description">A canvas tote bag with black lettering that says ALL I DO IS READ READ READ</p>
+                <button class="add-to-cart-btn body-strong" onclick="addToCart('images/Client3_ToteBag.png', 'Book Haven Tote Bag')">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Cart Modal -->
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeCartModal()">&times;</button> <!-- Close Button -->
+                <h2>Your Cart</h2>
+                <ul id="cart-items-list">
+                    <!-- Dynamically added items will appear here -->
+                </ul>
+                <button onclick="clearCart()">Clear Cart</button>
+                <button onclick="processOrder()">Process Order</button>
+            </div>
+        </div>
+    
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="subscribe">
+                <h3 class="title">Subscribe for<br> our Newsletter</h3>
+                <form id="subscribe-form">
+                    <label for="email" class="body-large">Enter your email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" class="body" required>
+                    <button type="submit" class="body-strong">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html" class="caption">Home</a></li>
+                <li><a href="gallery.html" class="caption">Gallery</a></li>
+                <li><a href="about.html" class="caption">About</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
